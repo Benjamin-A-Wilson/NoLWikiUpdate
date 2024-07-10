@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+
+<html lang="en"> <!--<![endif]-->
+	<head>
+		
+		<!--HTMLHeader-->
+		<title>{$Titlespaced} | {$Groupspaced} | $WikiTitle</title>
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		
+		<meta charset='utf-8'>
+		<meta http-equiv="content-type" content="text/html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- CSS -->
+		<link rel="stylesheet" href="$SkinDirUrl/css/normalize.css" />
+		<link rel="stylesheet" href="$SkinDirUrl/css/styles.css" />
+		<!-- JS -->
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	</head>
+	
+<body>
+	<div class="wrapper">
+		<header>
+			<!--PageHeaderFmt-->
+			<div style="float:right;">
+				<!-- HTML for SEARCH BAR
+				<div id="tfheader">
+					
+					<form id="tfnewsearch" method="get" action='{$ScriptUrl}'>
+						<a class="wikilink" href="javascript:if(window.print)window.print()">Print</a>
+						<input type='hidden' name='n' value='{$FullName}' />
+						<input type='hidden' name='action' value='search' />
+						<input type="text" class="tftextinput" name="q" size="21" maxlength="120" />
+						<input type="submit" value="search" class="tfbutton" />
+					</form>
+					<div class="tfclear"></div>
+				</div>
+				-->
+			</div>
+			<h1 class="logo"><a href="../Main/HomePage"><img src="$SkinDirUrl/images/logo.png" alt=""></a></h1>
+			<br />
+			<!--/PageHeaderFmt-->
+			<!--PageActionFmt-->
+			<!--<div id='wikibody'>-->
+			<div id='wikicmds'>
+			<!--wiki:$Group.PageActions $SiteGroup.PageActions-->
+			</div>
+			</div>
+			<!--/PageActionFmt-->
+		</header>
+		
+		<nav class="primary">
+			<h4>Navigation</h4>
+			<!--PageLeftFmt-->
+			<!--wiki:$Group.SideBar $SiteGroup.SideBar-->
+			<!--/PageLeftFmt-->
+		</nav><!--/ primary-->
+		
+		<section class="content">
+			<h2 hidden>section navigation</h2>
+			<span hidden>content</span>
+			<section class='item' id="breadcrumb"><!--/1-->
+				<h3 hidden>breadcrumb</h3>
+				<a href='../Main/Main'>Home Page</a> >> 
+				<a href='../{$Group}/{$Group}'>$Groupspaced</a> >>
+				<a href='../{$Group}/{$Name}'>$Namespaced</a>
+				<div id='alphabar'>
+				<!--wiki:Site.AlphaBar-->
+				</div>
+			</section><!--/1-->
+			<!--<section class="item" id="pagetitle">--><!--/2-->
+				<!--PageTitleFmt-->
+				<!--<h2>{$Titlespaced}</h2>-->
+				<!--wiki:$Group.SubTitle-->
+				<!--/PageTitleFmt-->
+			<!--</section>--><!--/2-->
+			<section class='item'><!--/3-->
+				<h3 hidden>item</h3>
+				<!--PageText-->
+			</section><!--/ text--><!--/3-->
+		</section><!--/ content-->	
+		<!--PageFooterFmt-->
+			<footer>
+				<nav>
+					<div class="rfloat"></div>
+					<h4>Footer</h4>
+					<!--wiki:$Group.Footer $SiteGroup.Footer-->
+					<div class='lastmod' style='text-align:center;'>$[Page last modified on {$LastModified}]</div>
+				</nav>
+			</footer>
+		<!--/PageFooterFmt-->			
+		
+	</div><!--/ wrapper-->	
+
+<!--HTMLFooter-->
+</body>
+</html>
