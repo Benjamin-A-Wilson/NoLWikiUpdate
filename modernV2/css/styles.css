@@ -151,6 +151,7 @@ header {
 nav.primary {
 	background: #343434;
 	border-bottom-right-radius: 4px;
+	color: #ffffff;
 }
 
 section.content {
@@ -171,7 +172,7 @@ section.content ul li {
 section.item {
 	-moz-border-radius: 15px;
 	border-radius: 15px;
-	border: 1px solid black;
+	border: 1px solid rgb(0, 0, 0);
 	padding: 20px;
 	padding-top: -10px;
 	margin: -20px;
@@ -347,12 +348,15 @@ a.showLink:hover, a.hideLink:hover {
 		}
 		
 		nav.primary ul {
-			display: block;		
+			/* Was block */
+			display: grid;
+			gap: 10px;		
 		}
 		
 		nav.primary ul,
 		nav.primary ul li {
 			margin: 0px;
+			border: 1px solid rgb(73, 72, 72);
 		}
 		
 		nav.primary ul li {
