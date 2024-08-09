@@ -84,6 +84,9 @@ include_once("$FarmD/cookbook/fox/fox.php");
 include_once("$FarmD/cookbook/foxnotify.php");
 include_once("$FarmD/cookbook/foxdelete.php");
 
+## Require Actions
+#include_once("$FarmD/cookbook/restrict_actions_v1.6.php");
+
 ## Template parameters
 # note that this also uses the command
 include_once( 'cookbook/templates.php' );
