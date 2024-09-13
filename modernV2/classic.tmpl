@@ -48,32 +48,29 @@
 			<!--/PageHeaderFmt-->
 			<!--PageActionFmt-->
 			<!--<div id='wikibody'>-->
-			<div id='wikicmds'>
-			<!--wiki:$Group.PageActions $SiteGroup.PageActions-->
-			</div>
+				<div id="tools">
+				<a rel="nofollow" accesskey='e' href='{$PageUrl}?action=edit'></a>
+				<a rel="nofollow" accesskey='h' href='{$PageUrl}?action=diff'></a>      
+				<a rel="nofollow" accesskey='a' href='{$PageUrl}?action=upload'></a>      
+				<a rel="nofollow" accesskey='c' href='{$ScriptUrl}/$[{$Group}/RecentChanges]'></a>      
+				<a rel="nofollow" accesskey='r' href='{$ScriptUrl}/Site/AllRecentChanges]'></a>
+				<a rel="nofollow" accesskey='l' href='{$ScriptUrl}/$[{$Group}/SideBar]?action=edit'></a>
+					<a rel="nofollow" accesskey='t' href='{$ScriptUrl}/Site/TopBar?action=edit'></a>
+					<a rel="nofollow" accesskey='m' href='{$ScriptUrl}/Site/TabMenu?action=edit'></a>
+					<a rel="nofollow" accesskey='f' href='{$ScriptUrl}/Site/Footer?action=edit'></a>
+				</div>
 			</div>
 			<!--/PageActionFmt-->
 		</header>
 		
 		<nav class="primary">
-			<h4>Navigation</h4>
+			<h4 hidden>Navigation</h4>
 			<!--PageLeftFmt-->
 			<!--wiki:$Group.SideBar $SiteGroup.SideBar-->
 			<!--/PageLeftFmt-->
 		</nav><!--/ primary-->
 		
 		<section class="content">
-			<h2 hidden>section navigation</h2>
-			<span hidden>content</span>
-			<section class='item' id="breadcrumb"><!--/1-->
-				<h3 hidden>breadcrumb</h3>
-				<a href='../Main/Main'>Home Page</a> >> 
-				<a href='../{$Group}/{$Group}'>$Groupspaced</a> >>
-				<a href='../{$Group}/{$Name}'>$Namespaced</a>
-				<div id='alphabar'>
-				<!--wiki:Site.AlphaBar-->
-				</div>
-			</section><!--/1-->
 			<!--<section class="item" id="pagetitle">--><!--/2-->
 				<!--PageTitleFmt-->
 				<!--<h2>{$Titlespaced}</h2>-->
@@ -89,8 +86,8 @@
 			<footer>
 				<nav>
 					<div class="rfloat"></div>
-					<h4>Footer</h4>
-					<!--wiki:$Group.Footer $SiteGroup.Footer-->
+					<!--<h4>Recent Activity</h4>-->
+					<!--wiki:$SiteGroup.Footer-->
 					<div class='lastmod' style='text-align:center;'>$[Page last modified on {$LastModified}]</div>
 				</nav>
 			</footer>

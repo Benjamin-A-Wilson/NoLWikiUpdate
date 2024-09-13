@@ -271,7 +271,9 @@ $AutoCreate['/^Category\\./'] = array('ctime' => $Now);
 #                     '$GUIButtonDirUrlFmt/table.gif"$[Table]"');
 
 # stripping sidebar, title and footer when not logged in
-if (!$AuthId) {
+/*
+if (!$AuthId && !admin) {
 	$HTMLStylesFmt[] = "
 	  footer nav, #breadcrumb, nav.primary, #wikilogo, #wikihead, #wikileft, #wikititle, #wikifoot {display:none}\n";
   };
+*/

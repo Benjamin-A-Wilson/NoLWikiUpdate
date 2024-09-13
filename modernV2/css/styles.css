@@ -33,7 +33,7 @@ body {
         }
 
 a {
-	color: #ffffff;	
+	color: #ffffff;
 }
 
 a:hover {
@@ -159,13 +159,8 @@ section.content {
 	border-top-left-radius: 4px;
 }
 
-section.content ul {
-	list-style-type: none;
-}
-
 section.content ul li {
 	width: 100%;
-	list-style: none;
 	margin-left: 2em;
 }
 
@@ -182,7 +177,7 @@ section.item {
 	}
 	
 section.item h3 {
-	color: blue;
+	color: black;
 	font-style: italic;
 	}
 
@@ -192,7 +187,7 @@ section.item h5 {
 	}
 
 section.item h4 {
-	color: #FFFFFF;
+	color: black;
 	font-size: 1.3em;
 	}
 	
@@ -314,10 +309,6 @@ select {
 .more {
 	display: none;
 	}
-
-a.wikilink {
-	font-size: 0.7em;
-}
 	
 a.showLink, a.hideLink {
 	text-decoration: none;
@@ -368,7 +359,7 @@ a.showLink:hover, a.hideLink:hover {
 		
 		nav.primary ul li a {
 			display: inline-block;
-			line-height: 3em;
+			line-height: 1.5em;
 			color: #ffffff;
 			padding:  0 1em;
 			text-decoration: none;
@@ -395,7 +386,7 @@ a.showLink:hover, a.hideLink:hover {
 			height: 0px;
 			overflow: hidden;
 			
-			width: 140%;
+			width: 100%;
 			
 			-webkit-transition: opacity 0.4s ease-out;
 			-moz-transition: opacity 0.4s ease-out;
@@ -567,12 +558,23 @@ a.showLink:hover, a.hideLink:hover {
 			top:0;
 			left: 100%;
 			z-index: 999;
-			background: #000;;
+			background: #343434;;
 			
 			height: 0px;
 			overflow: hidden;
 			
 			width: 200%;
+		}
+
+		nav.primary ul {
+			/* Was block */
+			display: block;		
+		}
+		
+		nav.primary ul,
+		nav.primary ul li {
+			margin-block: 10px;
+			border: 1px solid rgb(73, 72, 72);
 		}
 		
 	}
@@ -680,6 +682,10 @@ div.wikicmds a:active {
 		}
 }
 
+header {
+	padding: 0;
+}
+
 p#alpha-menu {
 	text-align: center;
 	color: red;
@@ -727,3 +733,71 @@ div#menu-top * {
 	border: 4px solid black;
 	height: 320px;
 }
+
+/* Content modifications
+
+section.item {
+	background-color: #ffffff;
+	padding: 0;
+	margin-top: 4em;
+	padding-bottom: 4em;
+	margin-left: 27em;
+	width: 45em;
+}
+*/
+
+section.item p, section.item pre, section.item td {
+  	font-size: 1.2em;
+}
+
+section.item ul, section.item ol {
+  	font-size: 1.2em;
+}
+
+/*
+section.item table.quickref{
+  width: 45em;
+}
+*/
+
+section.item table.quickref td {
+	font-size: 0.95em;  
+}
+
+/*
+section.item table {
+  border: 0;
+}
+
+section.item table tr, section.item table td {
+  padding:0; margin:0;
+}
+
+section.item table td {
+  padding-right:  6px;  
+  padding-bottom: 12px;  
+}
+
+section.item textarea {
+  font-family: monospace;
+}
+*/
+
+section.item h1 {
+  font-size: 1.7em;
+}
+
+section.item h2 {
+  font-size: 1.4em;
+}
+
+section.item h3 {
+  font-size: 1.2em;
+}
+
+/*
+section.item ul {
+  margin-left:0;
+	padding-left:2em;
+}
+*/
